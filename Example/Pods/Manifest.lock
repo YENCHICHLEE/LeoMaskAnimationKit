@@ -1,0 +1,14 @@
+PODS:
+  - LeoMaskAnimationKit (0.1.0)
+
+DEPENDENCIES:
+  - LeoMaskAnimationKit (from `../`)
+
+EXTERNAL SOURCES:
+  LeoMaskAnimationKit:
+    :path: ../
+
+SPEC CHECKSUMS:
+  LeoMaskAnimationKit: 4b2ba9f50a88d216cb9a7fee9be0da4474ffda43
+
+COCOAPODS: 0.39.0

@@ -1,0 +1,788 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0EBF9275EBB5C7FC6DFC73B36803D68F /* UIView+LeoMaskAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6C54FE0FD9CD5172BDC274EB265158 /* UIView+LeoMaskAnimation.m */; };
+		1A880D885AD49AE67FEF5B0267310CEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		252E9FB032F294F29543995EB4914240 /* Pods-LeoMaskAnimationKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3A7E210D49FE4493D12060AD294A25 /* Pods-LeoMaskAnimationKit_Tests-dummy.m */; };
+		32BA47A28BA5E7A51B0388EA3BFCFF9A /* LeoMaskAnimationKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 862101D1E5AC36E02E6306FA1787CBBE /* LeoMaskAnimationKit-dummy.m */; };
+		3F1F6020F6A8BAED77720748D4417B7B /* Pods-LeoMaskAnimationKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E9E9A7816F35A920D562B882AFB80F0 /* Pods-LeoMaskAnimationKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EB1F51F576EE3D838F2B758F2041F2D /* UIView+LeoMaskAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 58C0B7C6EFD2661E2A57333CFD69D7D2 /* UIView+LeoMaskAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81150216A37F82132FFD516B38E41653 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		84116997C6D88D48AEA9857F0D5A4C5A /* Pods-LeoMaskAnimationKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B9FF2F93DFF9366F6674A754236F1A /* Pods-LeoMaskAnimationKit_Example-dummy.m */; };
+		916CE37DE57599BC516B2506B4377CE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		C91E9C2FD7B7C0157DBE2CDB7E7106E1 /* Pods-LeoMaskAnimationKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4463D9E6372D5ED9167C83125171EAD3 /* Pods-LeoMaskAnimationKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC1DF9FFBFA190FCF9BFC251BB1065E2 /* LeoMaskAnimationKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 63EC39A22DB1CACB48955B29F4BA005F /* LeoMaskAnimationKit.bundle */; };
+		F33BF0D5E59EC92EBDB606DE10889209 /* LeoMaskAnimationKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A2E6311F318425152EAD2C9DB80E12E /* LeoMaskAnimationKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		688A3E03BF4F247F27537348BBAA82CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B61D7940545C01C879F06E9979F5DB11;
+			remoteInfo = LeoMaskAnimationKit;
+		};
+		78F3FD5AA03306A86E02A3BF06F92E34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B61D7940545C01C879F06E9979F5DB11;
+			remoteInfo = LeoMaskAnimationKit;
+		};
+		88528CB7E6D432DFACBAF8AF9580A06C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 756E9F5F2C3BAC97859C800741004A79;
+			remoteInfo = "LeoMaskAnimationKit-LeoMaskAnimationKit";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E9E9A7816F35A920D562B882AFB80F0 /* Pods-LeoMaskAnimationKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LeoMaskAnimationKit_Tests-umbrella.h"; sourceTree = "<group>"; };
+		2A2E6311F318425152EAD2C9DB80E12E /* LeoMaskAnimationKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LeoMaskAnimationKit-umbrella.h"; sourceTree = "<group>"; };
+		37325C3E512A17D0F38002D6DDF39F0D /* Pods-LeoMaskAnimationKit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LeoMaskAnimationKit_Example-resources.sh"; sourceTree = "<group>"; };
+		3A323C0905060425F5E72E204A29A42B /* Pods-LeoMaskAnimationKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeoMaskAnimationKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		3B7385D1B0DF5A722C72B055D9951830 /* Pods-LeoMaskAnimationKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeoMaskAnimationKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		401DAE9C77552FB938FC00C33C38B888 /* Pods-LeoMaskAnimationKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LeoMaskAnimationKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		4463D9E6372D5ED9167C83125171EAD3 /* Pods-LeoMaskAnimationKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LeoMaskAnimationKit_Example-umbrella.h"; sourceTree = "<group>"; };
+		58C0B7C6EFD2661E2A57333CFD69D7D2 /* UIView+LeoMaskAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+LeoMaskAnimation.h"; sourceTree = "<group>"; };
+		5C49CD29F93797D18C82F0AE42015A4B /* Pods-LeoMaskAnimationKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LeoMaskAnimationKit_Example-frameworks.sh"; sourceTree = "<group>"; };
+		61B990CD53072137D937B06905A1DB9B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63EC39A22DB1CACB48955B29F4BA005F /* LeoMaskAnimationKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeoMaskAnimationKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		640F879F5D4B767033D5754AECB1DC97 /* Pods-LeoMaskAnimationKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LeoMaskAnimationKit_Tests.modulemap"; sourceTree = "<group>"; };
+		6811A7B82892AE36DE319711B4115A3A /* Pods-LeoMaskAnimationKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LeoMaskAnimationKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		70A6144FC9A990439C7E250F1645B12E /* Pods_LeoMaskAnimationKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeoMaskAnimationKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8406EBD04A3065B89056E5911F1AE8A7 /* LeoMaskAnimationKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LeoMaskAnimationKit.modulemap; sourceTree = "<group>"; };
+		862101D1E5AC36E02E6306FA1787CBBE /* LeoMaskAnimationKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LeoMaskAnimationKit-dummy.m"; sourceTree = "<group>"; };
+		8DC42B5A20CC1E272F5D013792D4C5CB /* Pods-LeoMaskAnimationKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LeoMaskAnimationKit_Example.modulemap"; sourceTree = "<group>"; };
+		8E856E5C3B1CF7543E197954E52F5522 /* Pods-LeoMaskAnimationKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LeoMaskAnimationKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9B044C18248890DCC88E61BA9D471528 /* Pods-LeoMaskAnimationKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeoMaskAnimationKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		A1E310AFEAF7E8B11D6B9248B23D762B /* Pods-LeoMaskAnimationKit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LeoMaskAnimationKit_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		A3EA616D2CC884B30A6F72A5E7155463 /* Pods_LeoMaskAnimationKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeoMaskAnimationKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD3A7E210D49FE4493D12060AD294A25 /* Pods-LeoMaskAnimationKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LeoMaskAnimationKit_Tests-dummy.m"; sourceTree = "<group>"; };
+		AE43D80A251160D12924122977818D99 /* Pods-LeoMaskAnimationKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LeoMaskAnimationKit_Tests-resources.sh"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CB6C54FE0FD9CD5172BDC274EB265158 /* UIView+LeoMaskAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+LeoMaskAnimation.m"; sourceTree = "<group>"; };
+		D2F84BEAD41DC229D4789B7B347BBF45 /* LeoMaskAnimationKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LeoMaskAnimationKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7290012192E9608B4C89A8F95ACF802 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2B9E75D714E62C92C8358E0F7E60A09 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7B9FF2F93DFF9366F6674A754236F1A /* Pods-LeoMaskAnimationKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LeoMaskAnimationKit_Example-dummy.m"; sourceTree = "<group>"; };
+		EF7BF38A41ADE83BA7565DCF743CDC8A /* Pods-LeoMaskAnimationKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LeoMaskAnimationKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F28887D2253A13C6D3D649F7E406C88D /* Pods-LeoMaskAnimationKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeoMaskAnimationKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F66DEC6E1D3AFA19CA498F1C6C78237F /* LeoMaskAnimationKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LeoMaskAnimationKit.xcconfig; sourceTree = "<group>"; };
+		FC202DD54D4D7095FBB6DB6FADD0B9AE /* LeoMaskAnimationKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LeoMaskAnimationKit-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		071BBACCE394A35FEE2BFE8552BD17A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81150216A37F82132FFD516B38E41653 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69DB27634BA7823483CBCEDF4DF97A4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				916CE37DE57599BC516B2506B4377CE9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF32FFC6284311CCB08E60A5C0182028 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A880D885AD49AE67FEF5B0267310CEA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C09CA8929507181AD89A6D0E499601AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		239EA30EC6D13104716472E55B426319 /* Pods-LeoMaskAnimationKit_Example */ = {
+			isa = PBXGroup;
+			children = (
+				61B990CD53072137D937B06905A1DB9B /* Info.plist */,
+				8DC42B5A20CC1E272F5D013792D4C5CB /* Pods-LeoMaskAnimationKit_Example.modulemap */,
+				EF7BF38A41ADE83BA7565DCF743CDC8A /* Pods-LeoMaskAnimationKit_Example-acknowledgements.markdown */,
+				401DAE9C77552FB938FC00C33C38B888 /* Pods-LeoMaskAnimationKit_Example-acknowledgements.plist */,
+				E7B9FF2F93DFF9366F6674A754236F1A /* Pods-LeoMaskAnimationKit_Example-dummy.m */,
+				5C49CD29F93797D18C82F0AE42015A4B /* Pods-LeoMaskAnimationKit_Example-frameworks.sh */,
+				37325C3E512A17D0F38002D6DDF39F0D /* Pods-LeoMaskAnimationKit_Example-resources.sh */,
+				4463D9E6372D5ED9167C83125171EAD3 /* Pods-LeoMaskAnimationKit_Example-umbrella.h */,
+				3B7385D1B0DF5A722C72B055D9951830 /* Pods-LeoMaskAnimationKit_Example.debug.xcconfig */,
+				F28887D2253A13C6D3D649F7E406C88D /* Pods-LeoMaskAnimationKit_Example.release.xcconfig */,
+			);
+			name = "Pods-LeoMaskAnimationKit_Example";
+			path = "Target Support Files/Pods-LeoMaskAnimationKit_Example";
+			sourceTree = "<group>";
+		};
+		3FE2B6A29A29574956B3D83A5E485F3F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63EC39A22DB1CACB48955B29F4BA005F /* LeoMaskAnimationKit.bundle */,
+				D2F84BEAD41DC229D4789B7B347BBF45 /* LeoMaskAnimationKit.framework */,
+				A3EA616D2CC884B30A6F72A5E7155463 /* Pods_LeoMaskAnimationKit_Example.framework */,
+				70A6144FC9A990439C7E250F1645B12E /* Pods_LeoMaskAnimationKit_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		496FD4D49B99D716A1FC073F4B7EE41E /* Pods-LeoMaskAnimationKit_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E2B9E75D714E62C92C8358E0F7E60A09 /* Info.plist */,
+				640F879F5D4B767033D5754AECB1DC97 /* Pods-LeoMaskAnimationKit_Tests.modulemap */,
+				6811A7B82892AE36DE319711B4115A3A /* Pods-LeoMaskAnimationKit_Tests-acknowledgements.markdown */,
+				8E856E5C3B1CF7543E197954E52F5522 /* Pods-LeoMaskAnimationKit_Tests-acknowledgements.plist */,
+				AD3A7E210D49FE4493D12060AD294A25 /* Pods-LeoMaskAnimationKit_Tests-dummy.m */,
+				A1E310AFEAF7E8B11D6B9248B23D762B /* Pods-LeoMaskAnimationKit_Tests-frameworks.sh */,
+				AE43D80A251160D12924122977818D99 /* Pods-LeoMaskAnimationKit_Tests-resources.sh */,
+				0E9E9A7816F35A920D562B882AFB80F0 /* Pods-LeoMaskAnimationKit_Tests-umbrella.h */,
+				9B044C18248890DCC88E61BA9D471528 /* Pods-LeoMaskAnimationKit_Tests.debug.xcconfig */,
+				3A323C0905060425F5E72E204A29A42B /* Pods-LeoMaskAnimationKit_Tests.release.xcconfig */,
+			);
+			name = "Pods-LeoMaskAnimationKit_Tests";
+			path = "Target Support Files/Pods-LeoMaskAnimationKit_Tests";
+			sourceTree = "<group>";
+		};
+		584A4DCB753589DA05D7F165A8CD31A9 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F918C0A62186FA713B2F987A1604FE73 /* LeoMaskAnimationKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				584A4DCB753589DA05D7F165A8CD31A9 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				3FE2B6A29A29574956B3D83A5E485F3F /* Products */,
+				CA04F32462AB575FEF53B3DE6D363054 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		AEFFAF92F6F0FA47ABDA405DCF0AA0FD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7290012192E9608B4C89A8F95ACF802 /* Info.plist */,
+				8406EBD04A3065B89056E5911F1AE8A7 /* LeoMaskAnimationKit.modulemap */,
+				F66DEC6E1D3AFA19CA498F1C6C78237F /* LeoMaskAnimationKit.xcconfig */,
+				862101D1E5AC36E02E6306FA1787CBBE /* LeoMaskAnimationKit-dummy.m */,
+				FC202DD54D4D7095FBB6DB6FADD0B9AE /* LeoMaskAnimationKit-prefix.pch */,
+				2A2E6311F318425152EAD2C9DB80E12E /* LeoMaskAnimationKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LeoMaskAnimationKit";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C0D5D9B0E835E9EA18E1D148448A1E1E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				58C0B7C6EFD2661E2A57333CFD69D7D2 /* UIView+LeoMaskAnimation.h */,
+				CB6C54FE0FD9CD5172BDC274EB265158 /* UIView+LeoMaskAnimation.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C1CD65BEDFA1EE2374CAC3C83B5B4E5B /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				C0D5D9B0E835E9EA18E1D148448A1E1E /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		CA04F32462AB575FEF53B3DE6D363054 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				239EA30EC6D13104716472E55B426319 /* Pods-LeoMaskAnimationKit_Example */,
+				496FD4D49B99D716A1FC073F4B7EE41E /* Pods-LeoMaskAnimationKit_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F918C0A62186FA713B2F987A1604FE73 /* LeoMaskAnimationKit */ = {
+			isa = PBXGroup;
+			children = (
+				C1CD65BEDFA1EE2374CAC3C83B5B4E5B /* Pod */,
+				AEFFAF92F6F0FA47ABDA405DCF0AA0FD /* Support Files */,
+			);
+			name = LeoMaskAnimationKit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		34941EC0106E855EED3A3B3CADCAD0FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C91E9C2FD7B7C0157DBE2CDB7E7106E1 /* Pods-LeoMaskAnimationKit_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52501122901D9618000F1786D2401693 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F1F6020F6A8BAED77720748D4417B7B /* Pods-LeoMaskAnimationKit_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C14128882FDE581DC875C76066FDDDF9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F33BF0D5E59EC92EBDB606DE10889209 /* LeoMaskAnimationKit-umbrella.h in Headers */,
+				4EB1F51F576EE3D838F2B758F2041F2D /* UIView+LeoMaskAnimation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		742A1DD80400C355E75E6328F9677D45 /* Pods-LeoMaskAnimationKit_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 381804279DD37C3A147D3C5CA6EDAE5F /* Build configuration list for PBXNativeTarget "Pods-LeoMaskAnimationKit_Tests" */;
+			buildPhases = (
+				84CAFD7115F86E2C28192D0AB51428D7 /* Sources */,
+				AF32FFC6284311CCB08E60A5C0182028 /* Frameworks */,
+				52501122901D9618000F1786D2401693 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AF78911B0F67F678F43925EE88BC21F /* PBXTargetDependency */,
+			);
+			name = "Pods-LeoMaskAnimationKit_Tests";
+			productName = "Pods-LeoMaskAnimationKit_Tests";
+			productReference = 70A6144FC9A990439C7E250F1645B12E /* Pods_LeoMaskAnimationKit_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		756E9F5F2C3BAC97859C800741004A79 /* LeoMaskAnimationKit-LeoMaskAnimationKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DD4194FF7C5AE8FAF8FE21FF65D0236 /* Build configuration list for PBXNativeTarget "LeoMaskAnimationKit-LeoMaskAnimationKit" */;
+			buildPhases = (
+				950C95F4FF3B89C3B3AD4FBDD8E122D6 /* Sources */,
+				C09CA8929507181AD89A6D0E499601AD /* Frameworks */,
+				0AD6AA086842FF8A07BEDCDEB36D7AE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LeoMaskAnimationKit-LeoMaskAnimationKit";
+			productName = "LeoMaskAnimationKit-LeoMaskAnimationKit";
+			productReference = 63EC39A22DB1CACB48955B29F4BA005F /* LeoMaskAnimationKit.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		B61D7940545C01C879F06E9979F5DB11 /* LeoMaskAnimationKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0D51ABE53038D4C8B813DD709DF612D /* Build configuration list for PBXNativeTarget "LeoMaskAnimationKit" */;
+			buildPhases = (
+				2554B488BEF89E74F31C51292B4D2E89 /* Sources */,
+				071BBACCE394A35FEE2BFE8552BD17A7 /* Frameworks */,
+				E9E4F36617B67EA285ABDAE44A452984 /* Resources */,
+				C14128882FDE581DC875C76066FDDDF9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A6C0D02ACF7E43B44886E712B8BB998 /* PBXTargetDependency */,
+			);
+			name = LeoMaskAnimationKit;
+			productName = LeoMaskAnimationKit;
+			productReference = D2F84BEAD41DC229D4789B7B347BBF45 /* LeoMaskAnimationKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FC0D5D969B0C544EF5C885A3497DA915 /* Pods-LeoMaskAnimationKit_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8D489D9954BF1B4052D1B734348EE8B /* Build configuration list for PBXNativeTarget "Pods-LeoMaskAnimationKit_Example" */;
+			buildPhases = (
+				41CC9F022CBE84CF0E0C0DF5B03174A2 /* Sources */,
+				69DB27634BA7823483CBCEDF4DF97A4F /* Frameworks */,
+				34941EC0106E855EED3A3B3CADCAD0FE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F2A2209FCD1EC34F24DE18D844F27E8 /* PBXTargetDependency */,
+			);
+			name = "Pods-LeoMaskAnimationKit_Example";
+			productName = "Pods-LeoMaskAnimationKit_Example";
+			productReference = A3EA616D2CC884B30A6F72A5E7155463 /* Pods_LeoMaskAnimationKit_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0720;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 3FE2B6A29A29574956B3D83A5E485F3F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B61D7940545C01C879F06E9979F5DB11 /* LeoMaskAnimationKit */,
+				756E9F5F2C3BAC97859C800741004A79 /* LeoMaskAnimationKit-LeoMaskAnimationKit */,
+				FC0D5D969B0C544EF5C885A3497DA915 /* Pods-LeoMaskAnimationKit_Example */,
+				742A1DD80400C355E75E6328F9677D45 /* Pods-LeoMaskAnimationKit_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0AD6AA086842FF8A07BEDCDEB36D7AE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9E4F36617B67EA285ABDAE44A452984 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC1DF9FFBFA190FCF9BFC251BB1065E2 /* LeoMaskAnimationKit.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2554B488BEF89E74F31C51292B4D2E89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32BA47A28BA5E7A51B0388EA3BFCFF9A /* LeoMaskAnimationKit-dummy.m in Sources */,
+				0EBF9275EBB5C7FC6DFC73B36803D68F /* UIView+LeoMaskAnimation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41CC9F022CBE84CF0E0C0DF5B03174A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84116997C6D88D48AEA9857F0D5A4C5A /* Pods-LeoMaskAnimationKit_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CAFD7115F86E2C28192D0AB51428D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				252E9FB032F294F29543995EB4914240 /* Pods-LeoMaskAnimationKit_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		950C95F4FF3B89C3B3AD4FBDD8E122D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A6C0D02ACF7E43B44886E712B8BB998 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "LeoMaskAnimationKit-LeoMaskAnimationKit";
+			target = 756E9F5F2C3BAC97859C800741004A79 /* LeoMaskAnimationKit-LeoMaskAnimationKit */;
+			targetProxy = 88528CB7E6D432DFACBAF8AF9580A06C /* PBXContainerItemProxy */;
+		};
+		5AF78911B0F67F678F43925EE88BC21F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LeoMaskAnimationKit;
+			target = B61D7940545C01C879F06E9979F5DB11 /* LeoMaskAnimationKit */;
+			targetProxy = 688A3E03BF4F247F27537348BBAA82CD /* PBXContainerItemProxy */;
+		};
+		9F2A2209FCD1EC34F24DE18D844F27E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LeoMaskAnimationKit;
+			target = B61D7940545C01C879F06E9979F5DB11 /* LeoMaskAnimationKit */;
+			targetProxy = 78F3FD5AA03306A86E02A3BF06F92E34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03CA91998D6773EC5D02B3DB87B8353E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		39C8EC0D8592F66889AB9CDAA01295DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F66DEC6E1D3AFA19CA498F1C6C78237F /* LeoMaskAnimationKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LeoMaskAnimationKit/LeoMaskAnimationKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LeoMaskAnimationKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LeoMaskAnimationKit/LeoMaskAnimationKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = LeoMaskAnimationKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4081DDC61CAAC337696994AAC9F1F880 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A323C0905060425F5E72E204A29A42B /* Pods-LeoMaskAnimationKit_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LeoMaskAnimationKit_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LeoMaskAnimationKit_Tests/Pods-LeoMaskAnimationKit_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LeoMaskAnimationKit_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6883FD07877DF4921803AE3AE26A6BD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F28887D2253A13C6D3D649F7E406C88D /* Pods-LeoMaskAnimationKit_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LeoMaskAnimationKit_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LeoMaskAnimationKit_Example/Pods-LeoMaskAnimationKit_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LeoMaskAnimationKit_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B6EA8D452FCA59E8441F1526DF4BCC9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F66DEC6E1D3AFA19CA498F1C6C78237F /* LeoMaskAnimationKit.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = LeoMaskAnimationKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		C5A553B5AAFB77855DAF32670B899EF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B7385D1B0DF5A722C72B055D9951830 /* Pods-LeoMaskAnimationKit_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LeoMaskAnimationKit_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LeoMaskAnimationKit_Example/Pods-LeoMaskAnimationKit_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LeoMaskAnimationKit_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D4C494C0039DFD30AC798AD0A890918B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F66DEC6E1D3AFA19CA498F1C6C78237F /* LeoMaskAnimationKit.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = LeoMaskAnimationKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		D821783C0D2DD47C2ED45327B842EB45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B044C18248890DCC88E61BA9D471528 /* Pods-LeoMaskAnimationKit_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LeoMaskAnimationKit_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LeoMaskAnimationKit_Tests/Pods-LeoMaskAnimationKit_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LeoMaskAnimationKit_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F4150301ED5F0E985F207DB1B52C9BB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F66DEC6E1D3AFA19CA498F1C6C78237F /* LeoMaskAnimationKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LeoMaskAnimationKit/LeoMaskAnimationKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LeoMaskAnimationKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LeoMaskAnimationKit/LeoMaskAnimationKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = LeoMaskAnimationKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */,
+				03CA91998D6773EC5D02B3DB87B8353E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		381804279DD37C3A147D3C5CA6EDAE5F /* Build configuration list for PBXNativeTarget "Pods-LeoMaskAnimationKit_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D821783C0D2DD47C2ED45327B842EB45 /* Debug */,
+				4081DDC61CAAC337696994AAC9F1F880 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DD4194FF7C5AE8FAF8FE21FF65D0236 /* Build configuration list for PBXNativeTarget "LeoMaskAnimationKit-LeoMaskAnimationKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4C494C0039DFD30AC798AD0A890918B /* Debug */,
+				B6EA8D452FCA59E8441F1526DF4BCC9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0D51ABE53038D4C8B813DD709DF612D /* Build configuration list for PBXNativeTarget "LeoMaskAnimationKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4150301ED5F0E985F207DB1B52C9BB7 /* Debug */,
+				39C8EC0D8592F66889AB9CDAA01295DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8D489D9954BF1B4052D1B734348EE8B /* Build configuration list for PBXNativeTarget "Pods-LeoMaskAnimationKit_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5A553B5AAFB77855DAF32670B899EF2 /* Debug */,
+				6883FD07877DF4921803AE3AE26A6BD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

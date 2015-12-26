@@ -7,8 +7,11 @@
 //
 
 #import "LEOViewController.h"
-
+#import "UIView+LeoMaskAnimation.h"
 @interface LEOViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *backGroundImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *smallImageView;
+@property (weak, nonatomic) IBOutlet UIView *containView;
 
 @end
 
@@ -18,6 +21,19 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+- (IBAction)circleMask:(id)sender {
+    [self.smallImageView leo_animateCircleMaskWithduration:2.0
+                                                     delay:0.0
+                                                 clockwise:true
+                                                   options:LeoMaskAnimationOptionDefault];
+}
+- (IBAction)rectMask:(id)sender {
+    [self.containView leo_animateMaskFromRect:self.smallImageView.frame
+                                               toRect:self.containView.bounds
+                                             duration:2.0
+                                                delay:0.0
+                                              options:LeoMaskAnimationOptionDefault];
 }
 
 - (void)didReceiveMemoryWarning
