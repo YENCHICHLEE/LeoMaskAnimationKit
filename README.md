@@ -5,6 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/LeoMaskAnimationKit.svg?style=flat)](http://cocoapods.org/pods/LeoMaskAnimationKit)
 [![Platform](https://img.shields.io/cocoapods/p/LeoMaskAnimationKit.svg?style=flat)](http://cocoapods.org/pods/LeoMaskAnimationKit)
 
+##Gif
+ <img src="https://raw.github.com/LeoMobileDeveloper/LeoMaskAnimationKit/master/ScreenShots/gif1.gif" width="200" /><img src="https://raw.github.com/LeoMobileDeveloper/LeoMaskAnimationKit/master/ScreenShots/gif2.gif" width="200" />
+
 
 ## Requirements
 
@@ -19,7 +22,7 @@ it, simply add the following line to your Podfile:
 pod "LeoMaskAnimationKit"
 ```
 ## How to use
-First
+
 
 Mask between rects
 
