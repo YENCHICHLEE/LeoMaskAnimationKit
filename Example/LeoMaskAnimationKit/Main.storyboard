@@ -51,7 +51,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Main" id="U2M-qf-iDF">
-                        <barButtonItem key="leftBarButtonItem" title="Rect Mask" id="6en-Ws-LwN">
+                        <barButtonItem key="leftBarButtonItem" title="Path Mask" id="6en-Ws-LwN">
                             <connections>
                                 <action selector="rectMask:" destination="whP-gf-Uak" id="snG-zT-ON3"/>
                             </connections>

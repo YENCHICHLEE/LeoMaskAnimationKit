@@ -32,4 +32,9 @@ typedef NS_ENUM(NSInteger,LeoMaskAnimationOptions){
                                    delay:(NSTimeInterval)delay
                                clockwise:(BOOL)clockwise
                                  options:(LeoMaskAnimationOptions)options;
+
+-(void)leo_animateCircleExpandFromView:(UIView *)fromView
+                      duration:(NSTimeInterval)duration
+                         delay:(NSTimeInterval)delay
+                       options:(LeoMaskAnimationOptions)options;
 @end

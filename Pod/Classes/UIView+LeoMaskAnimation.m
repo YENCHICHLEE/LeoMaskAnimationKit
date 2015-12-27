@@ -72,7 +72,28 @@
     animation.timingFunction = [CAMediaTimingFunction functionWithName:[self mapOptionsToTimingFunction:options]];
     [maskLayer addAnimation:animation forKey:@"leoMaskAnimation"];
 }
-
+-(void)leo_animateCircleExpandFromView:(UIView *)fromView
+                               duration:(NSTimeInterval)duration
+                                  delay:(NSTimeInterval)delay
+                                options:(LeoMaskAnimationOptions)options{
+   
+    CGFloat radius = [self leo_minSideOfView:fromView]/2;
+    
+    CGFloat width = CGRectGetHeight(self.bounds);
+    CGFloat height = CGRectGetWidth(self.bounds);
+    CGFloat toRadius = sqrt(pow(width, 2) + pow(height, 2));
+    UIBezierPath * fromPath = [UIBezierPath bezierPathWithArcCenter:fromView.center
+                                                             radius:radius
+                                                         startAngle:0
+                                                           endAngle:M_PI *2
+                                                          clockwise:true];
+    UIBezierPath * toPath = [UIBezierPath bezierPathWithArcCenter:fromView.center
+                                                           radius:toRadius
+                                                       startAngle:0
+                                                         endAngle:M_PI * 2
+                                                        clockwise:true];
+    [self leo_animateMaskFromPath:fromPath toPath:toPath duration:duration delay:delay options:options];
+}
 -(NSString *)mapOptionsToTimingFunction:(LeoMaskAnimationOptions)options{
     NSString * result = nil;
     if (options == LeoMaskAnimationOptionDefault) {
@@ -88,5 +109,14 @@
     }
     return result;
 }
-
+-(CGFloat)leo_minSideOfView:(UIView *)view{
+    CGFloat width = CGRectGetWidth(view.bounds);
+    CGFloat height = CGRectGetHeight(view.bounds);
+    return MIN(width, height);
+}
+-(CGFloat)leo_maxSideOfView:(UIView *)view{
+    CGFloat width = CGRectGetWidth(view.bounds);
+    CGFloat height = CGRectGetHeight(view.bounds);
+    return MAX(width, height);
+}
 @end
