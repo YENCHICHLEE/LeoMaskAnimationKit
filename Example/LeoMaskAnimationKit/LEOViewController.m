@@ -40,11 +40,12 @@
                                           duration:2.0
                                              delay:0.0
                                            options:LeoMaskAnimationOptionEaseInOut];
+
+}
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    [self.containView leo_animateRectExpandDirection:LeoMaskAnimationDirectionLeftToRight duration:2.0 delay:0.0 options:LeoMaskAnimationOptionLiner];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 @end

@@ -94,6 +94,36 @@
                                                         clockwise:true];
     [self leo_animateMaskFromPath:fromPath toPath:toPath duration:duration delay:delay options:options];
 }
+-(void)leo_animateRectExpandDirection:(LeoMaskAnimationDirections)directions
+                              duration:(NSTimeInterval)duration
+                                 delay:(NSTimeInterval)delay
+                               options:(LeoMaskAnimationOptions)options{
+    UIBezierPath * fromPath;
+    CGFloat width = CGRectGetWidth(self.bounds);
+    CGFloat height = CGRectGetHeight(self.bounds);
+    if (directions == LeoMaskAnimationDirectionBottomToTop) {
+        fromPath = [UIBezierPath bezierPathWithRect:CGRectMake(0,height - 1, width, 1)];
+    }else if(directions == LeoMaskAnimationDirectionLeftToRight){
+        fromPath = [UIBezierPath bezierPathWithRect:CGRectMake(0,0, 1,height)];
+    }else if(directions ==  LeoMaskAnimationDirectionTopToBottom){
+        fromPath = [UIBezierPath bezierPathWithRect:CGRectMake(0,0, width, 1)];
+    }else if(directions == LeoMaskAnimationDirectionRightToLeft){
+        fromPath = [UIBezierPath bezierPathWithRect:CGRectMake(width - 1, 0, 1, height)];
+    }else if(directions == LeoMaskAnimationDirectionLeftBottomToRightTop){
+        fromPath = [UIBezierPath bezierPathWithRect:CGRectMake(0,height - 1, 1, 1)];
+    }else if(directions == LeoMaskAnimationDirectionLeftTopToRightBottom){
+        fromPath = [UIBezierPath bezierPathWithRect:CGRectMake(0,0, 1, 1)];
+    }else if(directions == LeoMaskAnimationDirectionRightBottomToLeftTop){
+        fromPath = [UIBezierPath bezierPathWithRect:CGRectMake(width - 1,height - 1, 1, 1)];
+    }else if(directions  == LeoMaskAnimationDirectionRightTopToLeftBottom){
+        fromPath = [UIBezierPath bezierPathWithRect:CGRectMake(width - 1,0, 1, 1)];
+    }else{
+        return;
+    }
+    UIBezierPath * toPath = [UIBezierPath bezierPathWithRect:self.bounds];
+    [self leo_animateMaskFromPath:fromPath toPath:toPath duration:duration delay:delay options:options];
+}
+
 -(NSString *)mapOptionsToTimingFunction:(LeoMaskAnimationOptions)options{
     NSString * result = nil;
     if (options == LeoMaskAnimationOptionDefault) {
