@@ -23,6 +23,22 @@ pod "LeoMaskAnimationKit"
 ```
 ## How to use
 
+<font color="red" size="3">Should in same coordinate when using mask</font>
+
+Circle view mask
+
+```
+-(void)leo_animateCircleMaskWithduration:(NSTimeInterval)duration delay:(NSTimeInterval)delay clockwise:(BOOL)clockwise options:(LeoMaskAnimationOptions)options;
+```
+Mask a view from any direction
+
+
+```
+-(void)leo_animateRectExpandDirection:(LeoMaskAnimationDirections)directions
+                             duration:(NSTimeInterval)duration
+                                delay:(NSTimeInterval)delay
+                              options:(LeoMaskAnimationOptions)options
+```
 
 Mask between rects
 
@@ -31,16 +47,12 @@ Mask between rects
 ```
 
 Mask between path
+
 ```
 
 -(void)leo_animateMaskFromPath:(UIBezierPath *)fromPath toPath:(UIBezierPath *)toPath duration:(NSTimeInterval)duration delay:(NSTimeInterval)delay options:(LeoMaskAnimationOptions)options;
 ```
 
-Circle view mask
-
-```
--(void)leo_animateCircleMaskWithduration:(NSTimeInterval)duration delay:(NSTimeInterval)delay clockwise:(BOOL)clockwise options:(LeoMaskAnimationOptions)options;
-```
 
 ## Author
 

@@ -68,7 +68,7 @@
     animation.duration = duration;
     animation.removedOnCompletion = NO;
     animation.fillMode = kCAFillModeForwards;
-//    animation.beginTime = CACurrentMediaTime() + delay;
+    animation.beginTime = CACurrentMediaTime() + delay;
     animation.timingFunction = [CAMediaTimingFunction functionWithName:[self mapOptionsToTimingFunction:options]];
     [maskLayer addAnimation:animation forKey:@"leoMaskAnimation"];
 }

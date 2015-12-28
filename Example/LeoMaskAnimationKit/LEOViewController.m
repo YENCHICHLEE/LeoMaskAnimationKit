@@ -9,8 +9,11 @@
 #import "LEOViewController.h"
 #import "UIView+LeoMaskAnimation.h"
 @interface LEOViewController ()
+
 @property (weak, nonatomic) IBOutlet UIImageView *backGroundImageView;
+
 @property (weak, nonatomic) IBOutlet UIImageView *smallImageView;
+
 @property (weak, nonatomic) IBOutlet UIView *containView;
 
 @end
