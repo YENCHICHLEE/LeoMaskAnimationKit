@@ -31,7 +31,10 @@
     [self.smallImageView leo_animateCircleMaskWithduration:2.0
                                                      delay:0.0
                                                  clockwise:true
-                                                   options:LeoMaskAnimationOptionDefault];
+                                                   options:LeoMaskAnimationOptionDefault compeletion:^{
+                                                       NSLog(@"Circle mask is completed");
+
+                                                   }];
 }
 - (IBAction)rectMask:(id)sender {
 //    [self.containView leo_animateMaskFromRect:self.smallImageView.frame
@@ -42,12 +45,17 @@
  [self.containView leo_animateCircleExpandFromView:self.smallImageView
                                           duration:2.0
                                              delay:0.0
-                                           options:LeoMaskAnimationOptionEaseInOut];
+                                           options:LeoMaskAnimationOptionEaseInOut compeletion:^{
+                                               NSLog(@"Circle expand is completed");
+
+                                           }];
 
 }
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    [self.containView leo_animateRectExpandDirection:LeoMaskAnimationDirectionLeftToRight duration:2.0 delay:0.0 options:LeoMaskAnimationOptionLiner];
+    [self.containView leo_animateRectExpandDirection:LeoMaskAnimationDirectionLeftToRight duration:2.0 delay:0.0 options:LeoMaskAnimationOptionLiner compeletion:^{
+        NSLog(@"Mask Rect is completed");
+    }];
 }
 
 

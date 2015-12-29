@@ -28,7 +28,11 @@ pod "LeoMaskAnimationKit"
 Circle view mask
 
 ```
--(void)leo_animateCircleMaskWithduration:(NSTimeInterval)duration delay:(NSTimeInterval)delay clockwise:(BOOL)clockwise options:(LeoMaskAnimationOptions)options;
+-(void)leo_animateCircleMaskWithduration:(NSTimeInterval)duration
+                                   delay:(NSTimeInterval)delay
+                               clockwise:(BOOL)clockwise
+                                 options:(LeoMaskAnimationOptions)options
+                             compeletion:(void(^)(void))completion;
 ```
 Mask a view from any direction
 
@@ -38,19 +42,30 @@ Mask a view from any direction
                              duration:(NSTimeInterval)duration
                                 delay:(NSTimeInterval)delay
                               options:(LeoMaskAnimationOptions)options
+                          compeletion:(void(^)(void))completion;
 ```
 
 Mask between rects
 
 ```
--(void)leo_animateMaskFromRect:(CGRect)fromRect toRect:(CGRect)toRect duration:(NSTimeInterval)duration delay:(NSTimeInterval)delay options:(LeoMaskAnimationOptions)options;
+-(void)leo_animateMaskFromRect:(CGRect)fromRect
+                    toRect:(CGRect)toRect
+                  duration:(NSTimeInterval)duration
+                     delay:(NSTimeInterval)delay
+                       options:(LeoMaskAnimationOptions)options
+                   compeletion:(void(^)(void))completion;
 ```
 
 Mask between path
 
 ```
 
--(void)leo_animateMaskFromPath:(UIBezierPath *)fromPath toPath:(UIBezierPath *)toPath duration:(NSTimeInterval)duration delay:(NSTimeInterval)delay options:(LeoMaskAnimationOptions)options;
+-(void)leo_animateMaskFromPath:(UIBezierPath *)fromPath
+                    toPath:(UIBezierPath *)toPath
+                  duration:(NSTimeInterval)duration
+                     delay:(NSTimeInterval)delay
+                       options:(LeoMaskAnimationOptions)options
+                   compeletion:(void(^)(void))completion;
 ```
 
 

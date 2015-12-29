@@ -15,20 +15,27 @@
                     toRect:(CGRect)toRect
                   duration:(NSTimeInterval)duration
                      delay:(NSTimeInterval)delay
-                   options:(LeoMaskAnimationOptions)options{
+                   options:(LeoMaskAnimationOptions)options
+                   compeletion:(void(^)(void))completion
+{
     UIBezierPath * fromPath = [UIBezierPath bezierPathWithRect:fromRect];
     UIBezierPath * toPath = [UIBezierPath bezierPathWithRect:toRect];
-    [self leo_animateMaskFromPath:fromPath toPath:toPath duration:duration delay:delay options:options];
+    [self leo_animateMaskFromPath:fromPath toPath:toPath duration:duration delay:delay options:options compeletion:completion];
 }
 
 -(void)leo_animateMaskFromPath:(UIBezierPath *)fromPath
                     toPath:(UIBezierPath *)toPath
                   duration:(NSTimeInterval)duration
                      delay:(NSTimeInterval)delay
-                   options:(LeoMaskAnimationOptions)options{
+                   options:(LeoMaskAnimationOptions)options
+                   compeletion:(void(^)(void))completion;
+{
+    
     CAShapeLayer * maskLayer = [CAShapeLayer layer];
     maskLayer.path = toPath.CGPath;
     self.layer.mask = maskLayer;
+    [CATransaction begin];
+    [CATransaction setCompletionBlock:completion];
     CABasicAnimation * animation = [CABasicAnimation animation];
     animation.keyPath = @"path";
     animation.beginTime = CACurrentMediaTime() + delay;
@@ -36,15 +43,17 @@
     animation.toValue = (__bridge id)toPath.CGPath;
     animation.duration = duration;
     animation.timingFunction = [CAMediaTimingFunction functionWithName:[self mapOptionsToTimingFunction:options]];
-    [maskLayer addAnimation:animation forKey:@"leoMaskAnimation"];
     animation.removedOnCompletion = NO;
     animation.fillMode = kCAFillModeForwards;
+    [maskLayer addAnimation:animation forKey:@"leoMaskAnimation"];
+    [CATransaction commit];
 }
 
 -(void)leo_animateCircleMaskWithduration:(NSTimeInterval)duration
                                    delay:(NSTimeInterval)delay
                                clockwise:(BOOL)clockwise
-                                 options:(LeoMaskAnimationOptions)options{
+                                 options:(LeoMaskAnimationOptions)options
+                             compeletion:(void (^)(void))completion{
     CGFloat width = CGRectGetWidth(self.frame);
     CGFloat height = CGRectGetHeight(self.frame);
     CGFloat maxSide = MAX(width, height);
@@ -54,6 +63,8 @@
                                                            startAngle:0.0
                                                              endAngle:M_PI * 2
                                                             clockwise:clockwise];
+    [CATransaction begin];
+    [CATransaction setCompletionBlock:completion];
     CAShapeLayer * maskLayer = [CAShapeLayer layer];
     maskLayer.path = bezierPath.CGPath;
     maskLayer.lineWidth = maxSide;
@@ -71,11 +82,13 @@
     animation.beginTime = CACurrentMediaTime() + delay;
     animation.timingFunction = [CAMediaTimingFunction functionWithName:[self mapOptionsToTimingFunction:options]];
     [maskLayer addAnimation:animation forKey:@"leoMaskAnimation"];
+    [CATransaction commit];
 }
 -(void)leo_animateCircleExpandFromView:(UIView *)fromView
                                duration:(NSTimeInterval)duration
                                   delay:(NSTimeInterval)delay
-                                options:(LeoMaskAnimationOptions)options{
+                                options:(LeoMaskAnimationOptions)options
+                           compeletion:(void (^)(void))completion{
    
     CGFloat radius = [self leo_minSideOfView:fromView]/2;
     
@@ -92,12 +105,14 @@
                                                        startAngle:0
                                                          endAngle:M_PI * 2
                                                         clockwise:true];
-    [self leo_animateMaskFromPath:fromPath toPath:toPath duration:duration delay:delay options:options];
+    [self leo_animateMaskFromPath:fromPath toPath:toPath duration:duration delay:delay options:options compeletion:completion];
 }
 -(void)leo_animateRectExpandDirection:(LeoMaskAnimationDirections)directions
                               duration:(NSTimeInterval)duration
                                  delay:(NSTimeInterval)delay
-                               options:(LeoMaskAnimationOptions)options{
+                               options:(LeoMaskAnimationOptions)options
+                          compeletion:(void(^)(void))completion
+{
     UIBezierPath * fromPath;
     CGFloat width = CGRectGetWidth(self.bounds);
     CGFloat height = CGRectGetHeight(self.bounds);
@@ -121,7 +136,7 @@
         return;
     }
     UIBezierPath * toPath = [UIBezierPath bezierPathWithRect:self.bounds];
-    [self leo_animateMaskFromPath:fromPath toPath:toPath duration:duration delay:delay options:options];
+    [self leo_animateMaskFromPath:fromPath toPath:toPath duration:duration delay:delay options:options compeletion:completion];
 }
 
 -(NSString *)mapOptionsToTimingFunction:(LeoMaskAnimationOptions)options{

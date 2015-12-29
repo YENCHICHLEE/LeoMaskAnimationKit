@@ -1,6 +1,6 @@
 {
   "name": "LeoMaskAnimationKit",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "summary": "LeoMaskAnimationKit is a collection of method to help you create mask animation in iOS",
   "description": "LeoMaskAnimationKit is a collection of method to help you create mask animation in iOS,it is easy to use",
   "homepage": "https://github.com/leoMobileDeveloper/LeoMaskAnimationKit",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/leoMobileDeveloper/LeoMaskAnimationKit.git",
-    "tag": "0.1.0"
+    "tag": "1.0.0"
   },
   "platforms": {
     "ios": "7.0"

@@ -1,5 +1,5 @@
 PODS:
-  - LeoMaskAnimationKit (0.1.0)
+  - LeoMaskAnimationKit (1.0.0)
 
 DEPENDENCIES:
   - LeoMaskAnimationKit (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  LeoMaskAnimationKit: 4b2ba9f50a88d216cb9a7fee9be0da4474ffda43
+  LeoMaskAnimationKit: 06db3492e5c45b74138e63f2dacd7e356ad4e43d
 
 COCOAPODS: 0.39.0
