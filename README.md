@@ -8,6 +8,8 @@
 ##Gif
  <img src="https://raw.github.com/LeoMobileDeveloper/LeoMaskAnimationKit/master/ScreenShots/gif1.gif" width="200" /><img src="https://raw.github.com/LeoMobileDeveloper/LeoMaskAnimationKit/master/ScreenShots/gif2.gif" width="200" /><img src="https://raw.github.com/LeoMobileDeveloper/LeoMaskAnimationKit/master/ScreenShots/gif3.gif" width="200" /><img src="https://raw.github.com/LeoMobileDeveloper/LeoMaskAnimationKit/master/ScreenShots/gif4.gif" width="200" />
 
+##With the methods,you can easy create a tableview cell like this
+<img src="https://raw.github.com/LeoMobileDeveloper/LeoMaskAnimationKit/master/ScreenShots/gif5.gif" width="200" />
 
 ## Requirements
 

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
         <!--Main-->
@@ -56,11 +57,18 @@
                                 <action selector="rectMask:" destination="whP-gf-Uak" id="snG-zT-ON3"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Circle Mask" id="ybQ-jb-rYS">
-                            <connections>
-                                <action selector="circleMask:" destination="whP-gf-Uak" id="wcc-OE-58g"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="To Table" id="aLp-hS-nGa">
+                                <connections>
+                                    <segue destination="qCQ-7E-Z7o" kind="show" id="xgT-T5-1ex"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Circle Mask" id="ybQ-jb-rYS">
+                                <connections>
+                                    <action selector="circleMask:" destination="whP-gf-Uak" id="wcc-OE-58g"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="backGroundImageView" destination="6Q3-Dp-H7R" id="TMC-SP-kdR"/>
@@ -89,6 +97,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J0Q-in-1mJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="305" y="433"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="q8x-oo-Rwr">
+            <objects>
+                <tableViewController id="qCQ-7E-Z7o" customClass="TableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="bCa-M6-IF9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="C72-AW-koM" customClass="CustomTableViewCell">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C72-AW-koM" id="HUd-H6-Nad">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="qCQ-7E-Z7o" id="tc9-9L-rdf"/>
+                            <outlet property="delegate" destination="qCQ-7E-Z7o" id="onI-8m-Loc"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hbu-1W-O2P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1817" y="433"/>
         </scene>
     </scenes>
     <resources>

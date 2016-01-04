@@ -30,6 +30,7 @@ typedef NS_ENUM(NSInteger,LeoMaskAnimationDirections){
 -(void)leo_animateRectExpandDirection:(LeoMaskAnimationDirections)directions
                              duration:(NSTimeInterval)duration
                                 delay:(NSTimeInterval)delay
+                                alpha:(CGFloat)alpha
                               options:(LeoMaskAnimationOptions)options
                           compeletion:(void(^)(void))completion;
 
@@ -37,6 +38,7 @@ typedef NS_ENUM(NSInteger,LeoMaskAnimationDirections){
                     toRect:(CGRect)toRect
                   duration:(NSTimeInterval)duration
                      delay:(NSTimeInterval)delay
+                         alpha:(CGFloat)alpha
                        options:(LeoMaskAnimationOptions)options
                    compeletion:(void(^)(void))completion;
 
@@ -45,6 +47,7 @@ typedef NS_ENUM(NSInteger,LeoMaskAnimationDirections){
                     toPath:(UIBezierPath *)toPath
                   duration:(NSTimeInterval)duration
                      delay:(NSTimeInterval)delay
+                         alpha:(CGFloat)alpha
                        options:(LeoMaskAnimationOptions)options
                    compeletion:(void(^)(void))completion;
 
@@ -58,7 +61,16 @@ typedef NS_ENUM(NSInteger,LeoMaskAnimationDirections){
 -(void)leo_animateCircleExpandFromView:(UIView *)fromView
                       duration:(NSTimeInterval)duration
                          delay:(NSTimeInterval)delay
+                                 alpha:(CGFloat)alpha
                        options:(LeoMaskAnimationOptions)options
                            compeletion:(void(^)(void))completion;
 
+-(void)leo_animateCircleExpandCenter:(CGPoint)center
+                              radius:(CGFloat)radius
+                            duration:(NSTimeInterval)duration
+                               delay:(NSTimeInterval)delay
+                               alpha:(CGFloat)alpha
+                             options:(LeoMaskAnimationOptions)options
+                         compeletion:(void (^)(void))completion;
+-(void)leo_removeMaskAnimations;
 @end

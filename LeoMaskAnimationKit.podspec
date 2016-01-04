@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "LeoMaskAnimationKit"
-  s.version          = "1.0.0"
+  s.version          = "1.0.1"
   s.summary          = "LeoMaskAnimationKit is a collection of method to help you create mask animation in iOS"
 
 # This description is used to generate tags and improve search results.

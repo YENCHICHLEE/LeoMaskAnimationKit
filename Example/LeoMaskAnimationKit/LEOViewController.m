@@ -43,9 +43,11 @@
 //                                                delay:0.0
 //                                              options:LeoMaskAnimationOptionDefault];
  [self.containView leo_animateCircleExpandFromView:self.smallImageView
-                                          duration:2.0
+                                          duration:1.0
                                              delay:0.0
-                                           options:LeoMaskAnimationOptionEaseInOut compeletion:^{
+                                             alpha:1.0
+                                           options:LeoMaskAnimationOptionLiner
+                                       compeletion:^{
                                                NSLog(@"Circle expand is completed");
 
                                            }];
@@ -53,7 +55,11 @@
 }
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    [self.containView leo_animateRectExpandDirection:LeoMaskAnimationDirectionLeftToRight duration:2.0 delay:0.0 options:LeoMaskAnimationOptionLiner compeletion:^{
+    [self.containView leo_animateRectExpandDirection:LeoMaskAnimationDirectionRightToLeft
+                                            duration:1.0
+                                               delay:0.0
+                                               alpha:1.0
+                                             options:LeoMaskAnimationOptionLiner compeletion:^{
         NSLog(@"Mask Rect is completed");
     }];
 }
