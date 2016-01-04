@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '83D2A463B7CC336BDBB11CD9'
+               BlueprintIdentifier = '6DA2666A63540EC7263B1185'
                BlueprintName = 'LeoMaskAnimationKit'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'LeoMaskAnimationKit.framework'>

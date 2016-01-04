@@ -24,6 +24,7 @@ typedef NS_ENUM(NSInteger,LeoMaskAnimationDirections){
     LeoMaskAnimationDirectionRightTopToLeftBottom,
     LeoMaskAnimationDirectionRightBottomToLeftTop,
 };
+
 @interface UIView (LeoMaskAnimation)
 
 -(void)leo_animateRectExpandDirection:(LeoMaskAnimationDirections)directions

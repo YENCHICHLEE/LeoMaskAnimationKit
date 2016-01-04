@@ -92,8 +92,8 @@
    
     CGFloat radius = [self leo_minSideOfView:fromView]/2;
     
-    CGFloat width = CGRectGetHeight(self.bounds);
-    CGFloat height = CGRectGetWidth(self.bounds);
+    CGFloat width = CGRectGetHeight(self.bounds)/2;
+    CGFloat height = CGRectGetWidth(self.bounds)/2;
     CGFloat toRadius = sqrt(pow(width, 2) + pow(height, 2));
     UIBezierPath * fromPath = [UIBezierPath bezierPathWithArcCenter:fromView.center
                                                              radius:radius
