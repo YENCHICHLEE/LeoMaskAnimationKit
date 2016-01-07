@@ -27,6 +27,14 @@ pod "LeoMaskAnimationKit"
 
 <font color="red" size="3">Should in same coordinate when using mask</font>
 
+Gradient mask
+
+```
+- (void)leo_animateGradienDuration:(NSTimeInterval)duration
+                             delay:(NSTimeInterval)delay
+                           options:(LeoMaskAnimationOptions)options
+                       compeletion:(void(^)(void))completion;
+```
 Circle view mask
 
 ```

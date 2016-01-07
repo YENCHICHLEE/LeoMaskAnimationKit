@@ -10,6 +10,59 @@
 
 @implementation UIView (LeoMaskAnimation)
 
+- (void)leo_animateGradienDuration:(NSTimeInterval)duration
+                             delay:(NSTimeInterval)delay
+                           options:(LeoMaskAnimationOptions)options
+                       compeletion:(void(^)(void))completion{
+    [CATransaction begin];
+    [CATransaction setCompletionBlock:^{
+        [CATransaction begin];
+        [CATransaction setCompletionBlock:^{
+            self.layer.mask = nil;
+            completion();
+        }];
+        CABasicAnimation * animation = [CABasicAnimation animation];
+        animation.keyPath = @"colors";
+        animation.toValue = @[
+                              (__bridge id)[UIColor colorWithWhite:1.0 alpha:1.0].CGColor,
+                              (__bridge id)[UIColor colorWithWhite:1.0 alpha:1.0].CGColor,
+                              ];
+        animation.duration = duration/3 * 1;
+        animation.removedOnCompletion = NO;
+        animation.fillMode = kCAFillModeForwards;
+        animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+        [self.layer.mask addAnimation:animation forKey:@"test"];
+        [CATransaction commit];
+    }];
+    CAGradientLayer * gradientMask = [CAGradientLayer layer];
+    gradientMask.colors = @[
+                            (__bridge id)[UIColor colorWithWhite:1.0 alpha:1.0].CGColor,
+                            (__bridge id)[UIColor colorWithWhite:1.0 alpha:0.0].CGColor,
+                            ];
+    gradientMask.bounds = CGRectMake(0, 0, CGRectGetWidth(self.bounds) * 2, CGRectGetHeight(self.bounds));
+    gradientMask.anchorPoint = CGPointZero;
+    gradientMask.position = CGPointMake(-CGRectGetWidth(gradientMask.bounds),0);
+    gradientMask.locations = @[
+                               @(0.0),
+                               @(1.0),
+                               ];
+    gradientMask.startPoint = CGPointMake(0.0, 0.5);
+    gradientMask.endPoint = CGPointMake(1.0, 0.5);
+    self.layer.mask = gradientMask;
+    
+    CABasicAnimation * animation = [CABasicAnimation animation];
+    animation.keyPath = @"position.x";
+    animation.toValue = @(0);
+    animation.duration = duration/3 * 2;
+    animation.removedOnCompletion = NO;
+    animation.fillMode = kCAFillModeForwards;
+    animation.timingFunction = [CAMediaTimingFunction functionWithName:[self mapOptionsToTimingFunction:options]];
+    animation.delegate = self;
+    animation.beginTime = CACurrentMediaTime() + delay;
+    [gradientMask addAnimation:animation forKey:@"basic"];
+    [CATransaction commit];
+    
+}
 
 -(void)leo_animateMaskFromRect:(CGRect)fromRect
                     toRect:(CGRect)toRect
@@ -161,17 +214,18 @@
         fromPath = [UIBezierPath bezierPathWithRect:CGRectMake(0,0, width, 1)];
     }else if(directions == LeoMaskAnimationDirectionRightToLeft){
         fromPath = [UIBezierPath bezierPathWithRect:CGRectMake(width - 1, 0, 1, height)];
-    }else if(directions == LeoMaskAnimationDirectionLeftBottomToRightTop){
-        fromPath = [UIBezierPath bezierPathWithRect:CGRectMake(0,height - 1, 1, 1)];
-    }else if(directions == LeoMaskAnimationDirectionLeftTopToRightBottom){
-        fromPath = [UIBezierPath bezierPathWithRect:CGRectMake(0,0, 1, 1)];
-    }else if(directions == LeoMaskAnimationDirectionRightBottomToLeftTop){
-        fromPath = [UIBezierPath bezierPathWithRect:CGRectMake(width - 1,height - 1, 1, 1)];
-    }else if(directions  == LeoMaskAnimationDirectionRightTopToLeftBottom){
-        fromPath = [UIBezierPath bezierPathWithRect:CGRectMake(width - 1,0, 1, 1)];
-    }else{
-        return;
     }
+//    else if(directions == LeoMaskAnimationDirectionLeftBottomToRightTop){
+//        fromPath = [UIBezierPath bezierPathWithRect:CGRectMake(0,height - 1, 1, 1)];
+//    }else if(directions == LeoMaskAnimationDirectionLeftTopToRightBottom){
+//        fromPath = [UIBezierPath bezierPathWithRect:CGRectMake(0,0, 1, 1)];
+//    }else if(directions == LeoMaskAnimationDirectionRightBottomToLeftTop){
+//        fromPath = [UIBezierPath bezierPathWithRect:CGRectMake(width - 1,height - 1, 1, 1)];
+//    }else if(directions  == LeoMaskAnimationDirectionRightTopToLeftBottom){
+//        fromPath = [UIBezierPath bezierPathWithRect:CGRectMake(width - 1,0, 1, 1)];
+//    }else{
+//        return;
+//    }
     UIBezierPath * toPath = [UIBezierPath bezierPathWithRect:self.bounds];
     [self leo_animateMaskFromPath:fromPath toPath:toPath duration:duration delay:delay alpha:alpha options:options compeletion:completion];
 }

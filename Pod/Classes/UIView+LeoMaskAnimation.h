@@ -19,13 +19,18 @@ typedef NS_ENUM(NSInteger,LeoMaskAnimationDirections){
     LeoMaskAnimationDirectionTopToBottom,
     LeoMaskAnimationDirectionRightToLeft,
     LeoMaskAnimationDirectionBottomToTop,
-    LeoMaskAnimationDirectionLeftTopToRightBottom,
-    LeoMaskAnimationDirectionLeftBottomToRightTop,
-    LeoMaskAnimationDirectionRightTopToLeftBottom,
-    LeoMaskAnimationDirectionRightBottomToLeftTop,
+//    LeoMaskAnimationDirectionLeftTopToRightBottom,
+//    LeoMaskAnimationDirectionLeftBottomToRightTop,
+//    LeoMaskAnimationDirectionRightTopToLeftBottom,
+//    LeoMaskAnimationDirectionRightBottomToLeftTop,
 };
 
 @interface UIView (LeoMaskAnimation)
+
+- (void)leo_animateGradienDuration:(NSTimeInterval)duration
+                             delay:(NSTimeInterval)delay
+                           options:(LeoMaskAnimationOptions)options
+                       compeletion:(void(^)(void))completion;
 
 -(void)leo_animateRectExpandDirection:(LeoMaskAnimationDirections)directions
                              duration:(NSTimeInterval)duration

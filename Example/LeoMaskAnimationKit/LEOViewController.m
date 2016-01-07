@@ -53,16 +53,21 @@
                                            }];
 
 }
+
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    [self.containView leo_animateRectExpandDirection:LeoMaskAnimationDirectionRightToLeft
-                                            duration:1.0
-                                               delay:0.0
-                                               alpha:1.0
-                                             options:LeoMaskAnimationOptionLiner compeletion:^{
-        NSLog(@"Mask Rect is completed");
-    }];
+//    [self.containView leo_animateRectExpandDirection:LeoMaskAnimationDirectionRightToLeft
+//                                            duration:1.0
+//                                               delay:0.0
+//                                               alpha:1.0
+//                                             options:LeoMaskAnimationOptionLiner compeletion:^{
+//        NSLog(@"Mask Rect is completed");
+//    }];
+    [self.containView leo_animateGradienDuration:2.4
+                                            delay:0.0
+                                         options:LeoMaskAnimationOptionLiner
+                                     compeletion:^{
+                                         NSLog(@"Gradient expand is completed");
+                                     }];
 }
-
-
 @end
